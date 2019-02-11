@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookify - The Book recommandation Platform</title>
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,700" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }}
+  .search {
+  background-color:  #77b5fe;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+
+</style>
+<body>
+   <div class="container">
+     <h1>Home</h1>
+     <p>Here is your home where you do whatever you want</p>
+     <hr>
+     <div class="search">
+       <label for="phone"><b>Search</b></label>
+       <input type="text" id ="homesearch" placeholder="what do you wanna search?" name="phone" required>
+       <div class="clearfix">
+         <button type="button" id="search" class="signupbtn">Search</button>
+       </div>
+     </div>
+     <div class="library">
+       <a href="library.html"><h3>Your library</h3></a>
+       <p>Where you'll find everything you liked, rated, and others</p>
+     </div>
+     <div class="browse">
+       <a href="browse.html"><h3>Browse</h3></a>
+       <p>Discover all the books, genres and authors out there</p>
+     </div>
+     <div class="premium">
+       <a href="premium.html"><h3>Go Premium</h3></a>
+       <p>No ads, and you can download any book to read on your device without internet!</p>
+     </div>
+     <div class="friends">
+       <a href="friends.html"><h3>Check up on your friends</h3></a>
+       <p>In our app, or through all social media, check up on your friend's activities</p>
+     </div>
+     <div class="personalized">
+       <a href="recommendations.html"><h3>Made for you</h3></a>
+       <p>Our best books and combinations based on your interests and taste</p>
+     </div>
+     <div class="settings">
+       <a href="settings.html"><h3>Settings</h3></a>
+     </div>
+     <script src="fronthome.js"></script>
+   </div>
+</body>
+</html>
